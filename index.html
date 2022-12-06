@@ -1,1 +1,1559 @@
-h
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
+
+      rel="stylesheet"
+
+    />
+
+    <title>Jepong Project Services</title>
+
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/JDevzDoubleJ/Project-404/main/imageedit_6_7210741026.png"/>
+
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <style>
+
+  .pricing-table-container {
+
+  font-family: "Raleway", sans-serif;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin: 30px 0;
+
+  align-items: flex-end;
+
+  }
+
+  
+
+  .pricing-table-container .table {
+
+  width: 300px;
+
+  background: #e8e8d9;
+
+  border-radius: 24px;
+
+  padding: 16px 0 8px 0;
+
+  margin: 0 16px;
+
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.2);
+
+  transition: all 500ms ease;
+
+  }
+
+  
+
+  .pricing-table-container .table:hover {
+
+  transform: scale(1.02);
+
+  }
+
+  
+
+  .pricing-table-container h2 {
+
+  font-size: 32px;
+
+  font-weight: 900;
+
+  color: #204959;
+
+  padding: 0 32px;
+
+  }
+
+  
+
+  .pricing-table-container p {
+
+  font-size: 15px;
+
+  color: #001219;
+
+  padding: 0 32px;
+
+  line-height: 2;
+
+  margin: 0;
+
+  }
+
+  
+
+  .pricing-table-container .price {
+
+  font-size: 70px;
+
+  font-weight: 900;
+
+  padding: 32px;
+
+  padding-top: 0;
+
+  color: #001219;
+
+  }
+
+  
+
+  .pricing-table-container .price::before {
+
+  content: "₱";
+
+  font-size: 32px;
+
+  }
+
+  
+
+  .pricing-table-container .features {
+
+  background: #9ac8de;
+
+  border-radius: 24px;
+
+  position: relative;
+
+  }
+
+  
+
+  .pricing-table-container .features::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 0;
+
+  width: 8px;
+
+  height: 90%;
+
+  background: #001219;
+
+  transform: translateY(-50%);
+
+  border-radius: 24px;
+
+  z-index: 200;
+
+  }
+
+  
+
+  .pricing-table-container .features ul {
+
+  padding: 24px 0;
+
+  list-style: none;
+
+  padding-bottom: 0;
+
+  }
+
+  
+
+  .pricing-table-container .features ul li {
+
+  margin: 8px 0;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  padding: 16px 32px;
+
+  color: #001219;
+
+  transition: all 500ms ease;
+
+  position: relative;
+
+  }
+
+  
+
+  .pricing-table-container .features ul li:hover {
+
+  background: white;
+
+  }
+
+  
+
+  .pricing-table-container .features ul li::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 8px;
+
+  top: 0;
+
+  height: 100%;
+
+  width: 4px;
+
+  background: #001219;
+
+  opacity: 0;
+
+  transition: all 500ms ease;
+
+  }
+
+  
+
+  .pricing-table-container .features ul li:hover::before {
+
+  opacity: 1;
+
+  }
+
+  
+
+  .pricing-table-container .btn {
+
+  background: #022c43;
+
+  display: inline-block;
+
+  padding: 12px 32px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  margin: 0 32px;
+
+  border-radius: 24px;
+
+  margin-bottom: 24px;
+
+  transition: all 500ms ease;
+
+  }
+
+  
+
+  .pricing-table-container .btn:hover {
+
+  background: teal;
+
+  }
+
+  
+
+  .pricing-table-container .table.best-value {
+
+  background: #091418;
+
+  position: relative;
+
+  }
+
+  
+
+  .pricing-table-container .table.best-value p,
+
+  .pricing-table-container .table.best-value .price {
+
+  color: #fff;
+
+  }
+
+  
+
+  .pricing-table-container .table.best-value h2 {
+
+  color: #7dd0ff;
+
+  }
+
+  
+
+  .pricing-table-container .table.best-value .tag-icon {
+
+  position: absolute;
+
+  top: -22px;
+
+  right: 22px;
+
+  }
+
+  
+
+  .pricing-table-container .table.best-value .tag-text {
+
+  position: absolute;
+
+  left: 19px;
+
+  top: 22px;
+
+  color: #fff;
+
+  font-weight: 700;
+
+  }
+
+  
+
+  @media (max-width: 1000px) {
+
+  .pricing-table-container {
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 42px;
+
+  }
+
+  
+
+  .pricing-table-container .table {
+
+  width: 90%;
+
+  max-width: 500px;
+
+  }
+
+  
+
+  .pricing-table-container h2 {
+
+  margin-bottom: 8px;
+
+  margin-top: 8px;
+
+  }
+
+  
+
+  .pricing-table-container .price {
+
+  font-size: 50px;
+
+  padding: 12px 32px;
+
+  }
+
+  
+
+  .pricing-table-container .features ul li {
+
+  margin: 0;
+
+  font-size: 16px;
+
+  }
+
+  }
+
+  
+
+                 
+
+                 
+
+                 
+
+                 button {
+
+                 position: relative;
+
+                 //display:block;
+
+                 height: 45px;
+
+                 width: 150px;
+
+                 margin: 10px 7px;
+
+                 padding: 5px 5px;
+
+                 font-weight: 700;
+
+                 font-size: 15px;
+
+                 letter-spacing: 2px;
+
+                 color: #383736;
+
+                 border: 2px #383736 solid;
+
+                 border-radius: 4px;
+
+                 text-transform: uppercase;
+
+                 outline: 0;
+
+                 overflow:hidden;
+
+                 background: none;
+
+                 z-index: 1;
+
+                 cursor: pointer;
+
+                 transition:         0.08s ease-in;
+
+                 -o-transition:      0.08s ease-in;
+
+                 -ms-transition:     0.08s ease-in;
+
+                 -moz-transition:    0.08s ease-in;
+
+                 -webkit-transition: 0.08s ease-in;
+
+                 }
+
+                 
+
+                 .fill:hover {
+
+                 color: whitesmoke;
+
+                 }
+
+                 
+
+                 .fill:before {
+
+                 content: "";
+
+                 position: absolute;
+
+                 background: #383736;
+
+                 bottom: 0;
+
+                 left: 0;
+
+                 right: 0;
+
+                 top: 100%;
+
+                 z-index: -1;
+
+                 -webkit-transition: top 0.09s ease-in;
+
+                 }
+
+                 
+
+                 .fill:hover:before {
+
+                 top: 0;
+
+                 }
+
+                 
+
+                 .fade:before{
+
+                 content:"→";
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left: 88%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 0.2s ease-in;
+
+                 }
+
+                 
+
+                 .fade:hover:before{
+
+                 left:91%;
+
+                 opacity:1;
+
+                 }
+
+                 
+
+                 .fade:hover {
+
+                 border: 0px #fff solid;
+
+                 -webkit-transform: scale(1.04,1.04);
+
+                 -webkit-transition: border 0.3s ease-out;
+
+                 -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .arrow{
+
+                 text-align:left;
+
+                 padding-left:17px;
+
+                 }
+
+                 
+
+                 .arrow:before{
+
+                 content:"→";
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left: 83%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .arrow:hover:before{
+
+                 left:84%;
+
+                 opacity:1;
+
+                 }
+
+                 
+
+                 .arrow:hover {
+
+                 width:170px;
+
+                 }
+
+                 
+
+                 
+
+                 .slide:after{
+
+                 content:"Vouchers";
+
+                 position:absolute;
+
+                 width:100%;
+
+                 height:100%;
+
+                 left:0;
+
+                 text-align:center;
+
+                 -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .slide:before {
+
+                 content:"Generating";
+
+                 height:100%;
+
+                 width:100%;
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left:-100%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .slide:hover{
+
+                 background:#383736;
+
+                 }
+
+                 
+
+                 .slide:hover:before{
+
+                 left:0;
+
+                 opacity:1;
+
+                 color:#fff;
+
+                 }
+
+                 .slide:hover:after{
+
+                 left:100%;
+
+                 opacity:0;
+
+                 }
+
+                 
+
+                 .slide.left:hover{
+
+                 background:none;
+
+                 }
+
+                 
+
+                 .slide.left:before {
+
+                 left:100%;
+
+                 color:#383736;
+
+                 -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .slide.left:hover:before{
+
+                 left:0;
+
+                 }
+
+                 
+
+                 .svg{
+
+                 -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+
+                 }
+
+                 
+
+                 .svg:before{
+
+                 position:absolute;  
+
+                 content:"";
+
+                 background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+
+                 width:100%;
+
+                 height:100%;
+
+                 top:0;
+
+                 left:0;
+
+                 z-index:-1;
+
+                 opacity:0;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+
+                 }
+
+                 
+
+                 .svg:after {
+
+                 content: "";
+
+                 position: absolute;
+
+                 background: #d19b26;
+
+                 bottom: 0;
+
+                 left: 0;
+
+                 right: 0;
+
+                 top: 100%;
+
+                 z-index: -2;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+
+                 }
+
+                 .svg:hover{
+
+                 color:white;
+
+                 border: 0px #d19b26 solid;
+
+                 }
+
+                 .svg:hover:before {
+
+                 opacity: .8;
+
+                 }
+
+                 .svg:hover:after {
+
+                 top: 0;
+
+                 }
+
+                 
+
+                 button {
+
+                 position: relative;
+
+                 //display:block;
+
+                 height: 45px;
+
+                 width: 150px;
+
+                 margin: 10px 7px;
+
+                 padding: 5px 5px;
+
+                 font-weight: 700;
+
+                 font-size: 15px;
+
+                 letter-spacing: 2px;
+
+                 color: #383736;
+
+                 border: 2px #383736 solid;
+
+                 border-radius: 4px;
+
+                 text-transform: uppercase;
+
+                 outline: 0;
+
+                 overflow:hidden;
+
+                 background: none;
+
+                 z-index: 1;
+
+                 cursor: pointer;
+
+                 transition:         0.08s ease-in;
+
+                 -o-transition:      0.08s ease-in;
+
+                 -ms-transition:     0.08s ease-in;
+
+                 -moz-transition:    0.08s ease-in;
+
+                 -webkit-transition: 0.08s ease-in;
+
+                 }
+
+                 
+
+                 .fill:hover {
+
+                 color: whitesmoke;
+
+                 }
+
+                 
+
+                 .fill:before {
+
+                 content: "";
+
+                 position: absolute;
+
+                 background: #383736;
+
+                 bottom: 0;
+
+                 left: 0;
+
+                 right: 0;
+
+                 top: 100%;
+
+                 z-index: -1;
+
+                 -webkit-transition: top 0.09s ease-in;
+
+                 }
+
+                 
+
+                 .fill:hover:before {
+
+                 top: 0;
+
+                 }
+
+                 
+
+                 .fade:before{
+
+                 content:"→";
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left: 88%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 0.2s ease-in;
+
+                 }
+
+                 
+
+                 .fade:hover:before{
+
+                 left:91%;
+
+                 opacity:1;
+
+                 }
+
+                 
+
+                 .fade:hover {
+
+                 border: 0px #fff solid;
+
+                 -webkit-transform: scale(1.04,1.04);
+
+                 -webkit-transition: border 0.3s ease-out;
+
+                 -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .arrow{
+
+                 text-align:left;
+
+                 padding-left:17px;
+
+                 }
+
+                 
+
+                 .arrow:before{
+
+                 content:"→";
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left: 83%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .arrow:hover:before{
+
+                 left:84%;
+
+                 opacity:1;
+
+                 }
+
+                 
+
+                 .arrow:hover {
+
+                 width:170px;
+
+                 }
+
+                 
+
+                 
+
+                 .trial:after{
+
+                 content:"Generate";
+
+                 position:absolute;
+
+                 width:100%;
+
+                 height:100%;
+
+                 left:0;
+
+                 text-align:center;
+
+                 -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .trial:before {
+
+                 content:"requesting";
+
+                 height:100%;
+
+                 width:100%;
+
+                 position:absolute;
+
+                 color:#383736;
+
+                 left:-100%;
+
+                 opacity: 0;
+
+                 -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .trial:hover{
+
+                 background:#383736;
+
+                 }
+
+                 
+
+                 .trial:hover:before{
+
+                 left:0;
+
+                 opacity:1;
+
+                 color:#fff;
+
+                 }
+
+                 .trial:hover:after{
+
+                 left:100%;
+
+                 opacity:0;
+
+                 }
+
+                 
+
+                 .trial.left:hover{
+
+                 background:none;
+
+                 }
+
+                 
+
+                 .trial.left:before {
+
+                 left:100%;
+
+                 color:#383736;
+
+                 -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+
+                 }
+
+                 
+
+                 .trial.left:hover:before{
+
+                 left:0;
+
+                 }
+
+                 
+
+                 .svg{
+
+                 -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+
+                 }
+
+                 
+
+                 .svg:before{
+
+                 position:absolute;  
+
+                 content:"";
+
+                 background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+
+                 width:100%;
+
+                 height:100%;
+
+                 top:0;
+
+                 left:0;
+
+                 z-index:-1;
+
+                 opacity:0;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+
+                 }
+
+                 
+
+                 .svg:after {
+
+                 content: "";
+
+                 position: absolute;
+
+                 background: #d19b26;
+
+                 bottom: 0;
+
+                 left: 0;
+
+                 right: 0;
+
+                 top: 100%;
+
+                 z-index: -2;
+
+                 -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+
+                 }
+
+                 .svg:hover{
+
+                 color:white;
+
+                 border: 0px #d19b26 solid;
+
+                 }
+
+                 .svg:hover:before {
+
+                 opacity: .8;
+
+                 }
+
+                 .svg:hover:after {
+
+                 top: 0;
+
+                 }
+
+  
+
+  </style>
+
+  <body>
+
+  
+
+  <p style="text-align:center">
+
+ <strong>By Renewing your Account<br>you have 30% Discount<br> Each Renew</strong>
+
+ 
+
+  </p>
+
+    <div class="pricing-table-container">
+
+      <div class="table">
+
+        <h2>Basic</h2>
+
+        <p>Best Plan for students & solo user.</p>
+
+        <div class="price">120</div>
+
+        <div class="features">
+
+          <ul>
+
+          <li>Basic Fast Servers</li>
+
+          <li>Best for 1 Person</li>
+
+          <li>30 Days Validity</li>
+
+          <li>Renewable Account</li>
+
+          <li>Unlimited Internet Access</li>
+
+          <li>Data Privacy Protected</li>
+
+          <li>100% Trusted, Safe & Reliable</li>
+
+          <li>Up to 13-21 MBPS</li>
+
+          </ul>
+
+          <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+        </div>
+
+      </div>
+
+      <div class="table best-value">
+
+        <div class="tag-icon">
+
+          <span class="tag-text">Best Choice</span>
+
+          <svg
+
+            width="77"
+
+            height="88"
+
+            viewBox="0 0 77 88"
+
+            fill="none"
+
+            xmlns="http://www.w3.org/2000/svg"
+
+          >
+
+            <path
+
+              d="M6.01136 10.7949C7.11064 8.74589 9.71941 8.0628 11.6818 9.31015L28.5 20L24.2491 22L-1.65478e-05 22L6.01136 10.7949Z"
+
+              fill="#A61C1C"
+
+            />
+
+            <path
+
+              d="M6.20434 12.2181C5.89966 9.82756 7.76237 7.71236 10.1722 7.71236L62.1788 7.71236C64.1616 7.71236 65.8452 9.16499 66.1356 11.1264L75.3885 73.6136C75.8283 76.5839 72.9605 78.9618 70.123 77.9794L45.6301 69.5L21.1255 84.5955C18.6504 86.1202 15.4271 84.5792 15.0596 81.6956L6.20434 12.2181Z"
+
+              fill="#FF4D4D"
+
+            />
+
+          </svg>
+
+        </div>
+
+        <h2>Premium</h2>
+
+        <p>Best Plan for intermediate user.</p>
+
+        <div class="price">190</div>
+
+        <div class="features">
+
+          <ul>
+
+          <li>Premium Fast Servers</li>
+
+          <li>Best for 1 Person</li>
+
+          <li>30 Days Validity</li>
+
+            <li>Data Privacy Protected</li>
+
+            <li>Renewable Account</li>
+
+            <li>Unlimited Internet Access</li>
+
+            <li>100% Trusted, Safe & Reliable</li>
+
+            <li>Up to 37-57 MBPS</li>
+
+          </ul>
+
+          <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+        </div>
+
+      </div>
+
+      <div class="table">
+
+        <h2>Private</h2>
+
+        <p>Best Plan for extreme and heavy streaming user.</p>
+
+        <div class="price">270</div>
+
+        <div class="features">
+
+          <ul>
+
+          <li>Fast Private Servers</li>
+
+          <li>Best for 1 Person</li>
+
+          <li>30 Days Validity</li>
+
+          <li>Data Privacy Protected</li>
+
+          <li>Renewable Account</li>
+
+          <li>Unlimited Internet Access</li>
+
+          <li>100% Trusted, Safe & Reliable</li>
+
+          <li>Up to 68-97 MBPS</li>
+
+          </ul>
+
+          <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+        </div>
+
+        </div>
+
+        
+
+        
+
+        <div class="table best-value">
+
+        <div class="tag-icon">
+
+        <span class="tag-text">Best Pack</span>
+
+        <svg
+
+        width="77"
+
+        height="88"
+
+        viewBox="0 0 77 88"
+
+        fill="none"
+
+        xmlns="http://www.w3.org/2000/svg"
+
+        >
+
+        <path
+
+        d="M6.01136 10.7949C7.11064 8.74589 9.71941 8.0628 11.6818 9.31015L28.5 20L24.2491 22L-1.65478e-05 22L6.01136 10.7949Z"
+
+        fill="#A61C1C"
+
+        />
+
+        <path
+
+        d="M6.20434 12.2181C5.89966 9.82756 7.76237 7.71236 10.1722 7.71236L62.1788 7.71236C64.1616 7.71236 65.8452 9.16499 66.1356 11.1264L75.3885 73.6136C75.8283 76.5839 72.9605 78.9618 70.123 77.9794L45.6301 69.5L21.1255 84.5955C18.6504 86.1202 15.4271 84.5792 15.0596 81.6956L6.20434 12.2181Z"
+
+        fill="#FF4D4D"
+
+        />
+
+        </svg>
+
+        </div>
+
+        <h2>Family Plan</h2>
+
+        <p>Best Plan for Families.</p>
+
+        <div class="price">540</div>
+
+        
+
+        <div class="features">
+
+        <ul>
+
+        <li>Access to All Fast Servers</li>
+
+        <li>Best for 1-4 Person</li>
+
+        <li>30 Days Validity</li>
+
+        <li>Data Privacy Protected</li>
+
+        <li>Refundable</li>
+
+        <li>Renewable Account</li>
+
+        <li>Unlimited Internet Access</li>
+
+        <li>100% Trusted, Safe & Reliable</li>
+
+        <li>Up to 37-57 MBPS</li>
+
+        </ul>
+
+        
+
+        <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+        </div>
+
+        </div>
+
+      
+
+      <div class="table best-value">
+
+      <div class="tag-icon">
+
+      <span class="tag-text">Best Value</span>
+
+      <svg
+
+      width="77"
+
+      height="88"
+
+      viewBox="0 0 77 88"
+
+      fill="none"
+
+      xmlns="http://www.w3.org/2000/svg"
+
+      >
+
+      <path
+
+      d="M6.01136 10.7949C7.11064 8.74589 9.71941 8.0628 11.6818 9.31015L28.5 20L24.2491 22L-1.65478e-05 22L6.01136 10.7949Z"
+
+      fill="#A61C1C"
+
+      />
+
+      <path
+
+      d="M6.20434 12.2181C5.89966 9.82756 7.76237 7.71236 10.1722 7.71236L62.1788 7.71236C64.1616 7.71236 65.8452 9.16499 66.1356 11.1264L75.3885 73.6136C75.8283 76.5839 72.9605 78.9618 70.123 77.9794L45.6301 69.5L21.1255 84.5955C18.6504 86.1202 15.4271 84.5792 15.0596 81.6956L6.20434 12.2181Z"
+
+      fill="#FF4D4D"
+
+      />
+
+      </svg>
+
+      </div>
+
+      <h2>VIP+</h2>
+
+      <p>The Best Plan for heavy user like Downloading & Streaming. </p>
+
+      <div class="price">920</div>
+
+      
+
+      <div class="features">
+
+      <ul>
+
+      <li>Access to All Fast Servers</li>
+
+      <li>Best for Personal Use</li>
+
+      <li>365 Days Validity</li>
+
+      <li>Data Privacy Protected</li>
+
+      <li>Refundable</li>
+
+       <li>Renewable Account</li>
+
+       <li>Unlimited Internet Access</li>
+
+      <li>Warranty Available</li>
+
+      <li>100% Trusted, Safe & Reliable</li>
+
+      <li>Up to 87-102 mbps</li>
+
+      </ul>
+
+      
+
+      <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+      </div>
+
+      </div>
+
+      
+
+      <div class="table best-value">
+
+      <div class="tag-icon">
+
+      <span class="tag-text">Best Plan</span>
+
+      <svg
+
+      width="77"
+
+      height="88"
+
+      viewBox="0 0 77 88"
+
+      fill="none"
+
+      xmlns="http://www.w3.org/2000/svg"
+
+      >
+
+      <path
+
+      d="M6.01136 10.7949C7.11064 8.74589 9.71941 8.0628 11.6818 9.31015L28.5 20L24.2491 22L-1.65478e-05 22L6.01136 10.7949Z"
+
+      fill="#A61C1C"
+
+      />
+
+      <path
+
+      d="M6.20434 12.2181C5.89966 9.82756 7.76237 7.71236 10.1722 7.71236L62.1788 7.71236C64.1616 7.71236 65.8452 9.16499 66.1356 11.1264L75.3885 73.6136C75.8283 76.5839 72.9605 78.9618 70.123 77.9794L45.6301 69.5L21.1255 84.5955C18.6504 86.1202 15.4271 84.5792 15.0596 81.6956L6.20434 12.2181Z"
+
+      fill="#FF4D4D"
+
+      />
+
+      </svg>
+
+      </div>
+
+      <h2>Family Pro+</h2>
+
+      <p>Best Plan for Family Use. Downloading, Streaming,<br> Online Class & Online Works.</p>
+
+      <div class="price">1080</div>
+
+      
+
+      <div class="features">
+
+      <ul>
+
+      <li>Access to All Fast Servers</li>
+
+      <li>Best for 1-6 Person</li>
+
+      <li>365 Days Validity</li>
+
+      <li>Data Privacy Protected</li>
+
+      <li>Refundable</li>
+
+      <li>Renewable Account</li>
+
+      <li>Unlimited Internet Access</li>
+
+      <li>100% Trusted, Safe & Reliable</li>
+
+      <li>Up to 91-126 MBPS</li>
+
+      </ul>
+
+      
+
+      <a href="mailto:jayarlee24@gmail.com" class="btn">Renew Account</a>
+
+      </div>
+
+      </div>
+
+    </div>
+
+    
+
+    
+
+  </body>
+
+  <!--Start of Tawk.to Script-->
+
+  <script type="text/javascript">
+
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+
+  (function(){
+
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+
+  s1.async=true;
+
+  s1.src='https://embed.tawk.to/636c8c5fdaff0e1306d6a8df/1gjh9mrdr';
+
+  s1.charset='UTF-8';
+
+  s1.setAttribute('crossorigin','*');
+
+  s0.parentNode.insertBefore(s1,s0);
+
+  })();
+
+  </script>
+
+  <!--End of Tawk.to Script-->
+
+</html>
